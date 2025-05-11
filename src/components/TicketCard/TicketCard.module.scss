@@ -1,0 +1,63 @@
+.card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(#000, 0.05);
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2196f3;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  .segments {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .segment {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .times, .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    color: #6b7280;
+  }
+  
+  .route {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .city {
+    font-weight: 500;
+  }
+  
+  .time {
+    opacity: 0.8;
+  }
+  
+  .duration, .stops {
+    display: block;
+  }
+  
