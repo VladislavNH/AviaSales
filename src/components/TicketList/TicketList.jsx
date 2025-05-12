@@ -1,4 +1,3 @@
-// src/components/TicketList/TicketList.jsx
 import React, { useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import TicketCard from '../TicketCard/TicketCard';
