@@ -1,7 +1,9 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleFilter, resetFilters } from '../../store';
+import { toggleFilter, /*resetFilters*/ } from '../../store/filterSlice';
+import styles from './Filters.module.scss';
 
+const ORDER = ['all', 0, 1, 2, 3];
 const LABELS = {
   all: 'Все',
   0: 'Без пересадок',
@@ -15,20 +17,26 @@ export default function Filters() {
   const { filters } = useSelector((state) => state.filters);
 
   return (
-    <div className="filters">
-      {Object.keys(filters).map((key) => (
-        <label key={key}>
+    <div className={styles.card}>
+      <div className={styles.title}>КОЛИЧЕСТВО ПЕРЕСАДОК</div>
+
+      {ORDER.map((key) => (
+        <label key={key} className={styles.option}>
           <input
             type="checkbox"
             checked={filters[key]}
             onChange={() => dispatch(toggleFilter(key))}
           />
-          {LABELS[key]}
+          <span className={styles.labelText}>{LABELS[key]}</span>
         </label>
       ))}
-      <button onClick={() => dispatch(resetFilters())}>
+
+      {/* <button
+        className={styles.reset}
+        onClick={() => dispatch(resetFilters())}
+      >
         Сбросить
-      </button>
+      </button> */}
     </div>
   );
 }

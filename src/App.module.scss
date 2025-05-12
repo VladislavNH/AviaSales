@@ -12,29 +12,22 @@
   background: #f0f4f8;
 }
 
+.header img {
+  width: 72px;
+  height: 72px;
+}
+
 .content {
   display: grid;
   grid-template-columns: 240px 1fr;
   gap: 24px;
-  padding: 0 24px 24px;
+  padding: 24px;
   flex: 1;
 }
 
-.sidebar {
-  background: white;
-  border-radius: 8px;
-  padding: 16px;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .error {
+  background: #fff7f7;
   color: #e74c3c;
-  padding: 16px;
-  background: white;
+  padding: 12px;
   border-radius: 6px;
 }

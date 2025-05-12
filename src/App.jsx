@@ -5,7 +5,7 @@ import SortTabs from './components/SortTab/SortTab';
 import Filters from './components/Filters/Filters';
 import TicketList from './components/TicketList/TicketList';
 import styles from './App.module.scss';
-import planeIcon from './assets/plane-icon.svg'; 
+import aviasalesLogo from './assets/aviasalesLogo.svg';
 
 export default function App() {
   const dispatch = useDispatch();
@@ -17,19 +17,14 @@ export default function App() {
 
   return (
     <div className={styles.app}>
-      {/* 1. Хедер с иконкой */}
       <header className={styles.header}>
-        <img src={planeIcon} alt="Plane" />
+        <img src={aviasalesLogo} alt="Plane" />
       </header>
 
-      {/* 2. Основной контент */}
       <div className={styles.content}>
-        {/* 2a. Фильтры */}
         <aside className={styles.sidebar}>
           <Filters />
         </aside>
-
-        {/* 2b. Секция с табами и списком */}
         <section className={styles.main}>
           <SortTabs />
           {error && <div className={styles.error}>Ошибка: {error}</div>}

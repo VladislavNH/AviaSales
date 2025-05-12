@@ -1,63 +1,72 @@
+/* src/components/TicketCard/TicketCard.module.scss */
+
 .card {
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(#000, 0.05);
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  .price {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #2196f3;
-  }
-  
-  .logo {
-    width: 50px;
-    height: auto;
-  }
-  
-  .segments {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-  
-  .segment {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .times, .info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    font-size: 0.85rem;
-    color: #6b7280;
-  }
-  
-  .route {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .city {
-    font-weight: 500;
-  }
-  
-  .time {
-    opacity: 0.8;
-  }
-  
-  .duration, .stops {
-    display: block;
-  }
-  
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2196f3;
+}
+
+.logo {
+  width: 110px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.segment {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.segmentInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.route {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+.time {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222222;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #8b8b8b;
+}
+
+.value {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4a4a4a;
+}

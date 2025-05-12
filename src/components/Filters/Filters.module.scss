@@ -1,29 +1,61 @@
-.container {
-  background: #fff;
-  border-radius: 4px;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(#000, 0.05);
-  font-size: 0.9rem;
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .title {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
 }
 
 .option {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
   cursor: pointer;
+}
 
-  input {
-    margin-right: 0.5rem;
-    width: 1rem;
-    height: 1rem;
-  }
+.option input {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
 
-  span {
-    user-select: none;
-  }
+.labelText {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #4a4a4a;
+  transition: background .2s;
+}
+
+.option:hover .labelText {
+  background: #f0f4f8;
+}
+
+.option input:checked + .labelText {
+  background: #e5f3ff;
+}
+
+.reset {
+  margin-top: 8px;
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: #2494f0;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background .2s;
+}
+
+.reset:hover {
+  background: rgba(36,148,240,0.1);
 }
