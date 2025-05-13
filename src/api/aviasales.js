@@ -1,4 +1,4 @@
-const API_BASE = 'https://aviasales-test-api.kata.academy';
+const API_BASE = 'api/aviasales';
 
 export async function getSearchId() {
   const res = await fetch(`${API_BASE}/search`);
